@@ -64,33 +64,48 @@
     </header>
     <div class="contact-form">
         <h2 class="colorOrange">Contacto</h2>
-        <form action="procesar_formulario.php" method="post">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="form-group">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-            </div>
-            <div class="form-group">
-                <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-            </div>
-            <label>Intereses:</label>
-            <input type="checkbox" id="interes1" name="intereses[]" value="Interés 1">
-            <label for="interes1">Interés 1</label>
-            <input type="checkbox" id="interes2" name="intereses[]" value="Interés 2">
-            <label for="interes2">Interés 2</label>
-            <input type="checkbox" id="interes3" name="intereses[]" value="Interés 3">
-            <label for="interes3">Interés 3</label>
-            <button type="submit">Enviar</button>
+        <form action="mailto:guido.lucana@tecsup.edu.com" method="post" enctype="text/plain">
+            <fieldset>
+                 <h2>Rellenar formulario completo:</h2>
+                 <ul>
+                      <li>
+                           <label id="Nombre" for="Nombre">Nombre:</label>
+                           <input class="input" id="Nombre" type="text"required width="300px">
+                     </li>
+                     <li>
+                           <label id="primer" for="primer">Primer Apellido:</label>
+                           <input class="input" id="primer" type="text"required width="300px">
+                     </li>
+                     <li>
+                           <label id="Segundo" for="Segundo">Segundo Apellido:</label>
+                           <input class="input" id="Segundo" type="text" required width="300px">
+                     </li>
+                     <li>
+                           <label id="mail" for="mail">E-mail de contacto:</label>
+                           <input class="input" id="mail" type="text" name="mail" placeholder="xxx@gmail.com" required 
+                           pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+                     </li>
+                     <li>
+                           <label id="Mensaje" for="Mensaje">Mensaje:<span>*describe tu consulta</span></label>
+                           <textarea class="input" id="Mensaje" name="Mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+                    </li>
+                    <li>
+                          <div class="checkbox">
+                               <input id="check" type="checkbox" required >
+                               <a href="#">He leido y acepto la politica de privacidad</a>
+                          </div>
+                    </li>
+                    <li>
+                          <label for="contactar"></label>
+                          <button style="background-color: rgb(0, 225, 255) ;" type="submit">CONTACTAR</button>
+                    </li>
+                   
+              </ul>
+           </fieldset>
         </form>
     </div>
+
+    
 
     <footer>
         <p>EMPRESA</p>
